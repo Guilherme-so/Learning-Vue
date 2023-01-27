@@ -1,5 +1,5 @@
 <template>
-  <p>I'm {{ nome }} and I'm learning {{ skills }}</p>
+  <p>I'm {{ multi === true ? "Gui" : "Guilherme"}} and I'm learning {{ skills }}</p>
 </template>
 
 <script>
@@ -8,6 +8,7 @@ export default {
     return {
       nome: "Guilherme",
       skills: "React and Vue",
+      multi: false
     };
   },
 };
