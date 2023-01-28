@@ -3,24 +3,39 @@ import Learning from "./components/Learning.vue";
 import LifeCycle from "./components/LifeCycle.vue";
 import Diretives from "./components/Diretives.vue";
 import Dinamicos from "./components/Dinamicos.vue"
+import Methods from "./components/Methods.vue";
+import Header from "./components/Header.vue";
+
 </script>
 
 <template>
-  <h1>Learning {{ skill }}</h1>
+  <Header/>
+
+<h1>Learning {{ skill }}</h1>
   <!-- <Learning /> -->
   <!-- <LifeCycle /> -->
-  <!-- <Diretives /> -->
-
-  <Dinamicos />
+  <!-- <Dinamicos /> -->
+  <!-- <Methods /> -->
+  <Diretives />
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      skill: "Vue",
-    };
-  },
-  components: { Diretives },
+    data() {
+        return {
+            skill: "Vue",
+        };
+    },
+    components: { Header }
 };
 </script>
+
+
+<style>
+
+body{
+  background-color: #ddd;
+  color: #fff;
+}
+
+</style>
