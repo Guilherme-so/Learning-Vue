@@ -10,7 +10,7 @@ import Multiplos_eventos from "./components/Multiplos_eventos.vue";
 </script>
 
 <template>
-  <Header />
+  <Header logo="Learning Vue.js" :logado=true :perfil="perfil" />
   <!-- <Learning /> -->
   <!-- <LifeCycle /> -->
   <!-- <Dinamicos /> -->
@@ -22,6 +22,11 @@ import Multiplos_eventos from "./components/Multiplos_eventos.vue";
 
 <script>
 export default {
+  data() {
+    return {
+      perfil: "Guilherme",
+    };
+  },
   components: { Header, Forms, Multiplos_eventos },
 };
 </script>
@@ -31,4 +36,10 @@ body {
   background-color: #ddd;
   color: #fff;
 }
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
 </style>
