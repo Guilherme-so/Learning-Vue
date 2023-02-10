@@ -9,6 +9,7 @@ import Forms from "./components/Forms.vue";
 import Multiplos_eventos from "./components/Multiplos_eventos.vue";
 import ClickEvents from "./components/Event/ClickEvents.vue";
 import ChangeEvent from "./components/Event/ChangeEvent.vue";
+import BindClassAndStyle from "./components/BindClassAndStyle.vue";
 </script>
 
 <template>
@@ -22,17 +23,19 @@ import ChangeEvent from "./components/Event/ChangeEvent.vue";
     <!-- <Forms /> -->
     <!-- <Multiplos_eventos /> -->
     <!-- <ClickEvents /> -->
-    <ChangeEvent />
+    <!-- <ChangeEvent /> -->
+    <BindClassAndStyle/>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      perfil: "Guilherme",
-    };
-  },
+    data() {
+        return {
+            perfil: "Guilherme",
+        };
+    },
+    components: { BindClassAndStyle }
 };
 </script>
 
