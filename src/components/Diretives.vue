@@ -1,14 +1,17 @@
 <template>
   <div class="if_else">
-    <h4 v-if="estou_com_preguiça">
-      Watch Youtube, Listen to music and play chess
+    <h4 v-if="music === 1">
+      I' gonna listen to Perl jam 
     </h4>
-    <h4 v-else>Estudar programaçao</h4>
+    <h4 v-else-if="music === 2">
+      I' gonna listen to Gorrilaz       
+    </h4>
+    <h4 v-else>Im not gonna listen to music now</h4>
   </div>
   <br />
 
   <div class="v_show">
-    <h1>v-show se for verdade mostra se nao, nao mostra nada</h1>
+    <h1>v-show display just if its true</h1>
     <h3 v-show="show_password">{{ password }}</h3>
   </div>
 
@@ -35,7 +38,7 @@
 export default {
   data() {
     return {
-      estou_com_preguiça: false,
+      music: 3,
       password: "gui12345",
       show_password: true,
       tecnologies: ["React", "Vue", "Angular"],

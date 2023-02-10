@@ -19,12 +19,12 @@ import BindClassAndStyle from "./components/BindClassAndStyle.vue";
     <!-- <LifeCycle /> -->
     <!-- <Dinamicos /> -->
     <!-- <Methods /> -->
-    <!-- <Diretives /> -->
+    <Diretives />
     <!-- <Forms /> -->
     <!-- <Multiplos_eventos /> -->
     <!-- <ClickEvents /> -->
     <!-- <ChangeEvent /> -->
-    <BindClassAndStyle/>
+    <!-- <BindClassAndStyle/> -->
   </div>
 </template>
 
